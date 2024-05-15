@@ -11,7 +11,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
+      title: 'IOTECH',
       theme: ThemeData(
        
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
@@ -51,19 +52,15 @@ class _MyHomePageState extends State<MyHomePage> {
      
         title: Text(widget.title),
       ),
-      body: Center(
+      body: const Center(
         
         child: Column(
          
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
+            Text("Este site está em construção",style: TextStyle(fontSize: 25.0,fontWeight: FontWeight.w900),)       
+            
+           
           ],
         ),
       ),
