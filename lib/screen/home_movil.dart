@@ -14,7 +14,27 @@ class _HomeMovilState extends State<HomeMovil> {
       appBar: PreferredSize(
         preferredSize: const Size.fromHeight(60),
         child: AppBar(
-          toolbarHeight: 60,
+          //toolbarHeight: 60,
+          actions: <Widget>[
+            PopupMenuButton<int>(
+              onSelected: (item) => onSelected(context, item),
+              itemBuilder: (context)=>[
+               const PopupMenuItem(
+                  value: 0,
+                  child: Text("Sobre Nós"),),
+                   const PopupMenuItem(
+                  value: 1,
+                  child: Text("Nossas soluções"),),
+                    const PopupMenuItem(
+                  value: 2,
+                  child: Text("Contate-nos"),),
+                  
+                  
+
+
+              ] ,
+            )
+          ],
           title: const SizedBox(
             height: 50,
             child: Image(
@@ -23,11 +43,19 @@ class _HomeMovilState extends State<HomeMovil> {
           ),
         ),
       ),
-      body: const Center(
-        child: Image(
-          image: AssetImage('assets/fondomovil.jpg'),
+      body:  const SingleChildScrollView(
+        child:  Column(
+          children: [
+            Image(
+              image: AssetImage('assets/fondomovil.jpg'),
+            ),
+          ],
         ),
       ),
     );
   }
+  
+}
+
+onSelected(BuildContext context, int item) {
 }
