@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:iotechweb/screen/home.dart';
+import 'package:iotechweb/screen/home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
             seedColor: const Color.fromARGB(255, 184, 193, 224)),
         useMaterial3: true,
       ),
-      home: const Home(),
+      home: const HomePage(),
     );
   }
 }
