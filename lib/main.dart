@@ -15,7 +15,8 @@ class MyApp extends StatelessWidget {
       title: 'IOTech',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
-            seedColor: const Color.fromARGB(255, 184, 193, 224)),
+          seedColor: const Color.fromARGB(255, 184, 193, 224),
+        ),
         useMaterial3: true,
       ),
       home: const HomePage(),
